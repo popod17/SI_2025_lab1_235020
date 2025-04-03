@@ -65,6 +65,15 @@ class TaskManager {
     // 1. Remove a task by name
     public void removeTask(String name) {
         // TODO: Implement removal logic
+        int idx=0;
+        int c = 0;
+        for (Task task : tasks) {
+            if(task.getName().equals(name)){
+                idx=c;
+            }
+            c++;
+        }
+        tasks.remove(idx);
     }
 
     // 2. Find all completed tasks
@@ -97,7 +106,6 @@ class TaskManager {
 
     // 7. Count tasks per category
     public Map<String, Integer> countTasksPerCategory() {
-        // TODO: Implement counting logic
         return new HashMap<>();
     }
 
@@ -119,8 +127,11 @@ public class SI2025Lab1Main {
         manager.addTask("Submit assignment", Priority.MEDIUM, "School");
         manager.addTask("Buy groceries", Priority.LOW, "Personal");
 
-        // MISSING: Calls to the new methods that will be implemented
 
+        // MISSING: Calls to the new methods that will be implemented
         manager.printTasks();
+        manager.removeTask("Submit assignment");
+		manager.printTasks();
+
     }
 }
