@@ -1,0 +1,19 @@
+*   8b53018 (HEAD -> master, origin/master, origin/HEAD) Merge branch '8-mark-a-task-as-completed-by-name'
+|\
+| * c2ce805 (origin/8-mark-a-task-as-completed-by-name, 8-mark-a-task-as-completed-by-name) Implement #8
+* |   674fc29 Merge pull request #11 from popod17/2-find-all-completed-tasks
+|\ \
+| * \   c478b2d Merge branch 'master' into 2-find-all-completed-tasks
+| |\ \
+| |/ /
+|/| |
+* | |   46e94aa Merge pull request #10 from popod17/1-remove-a-task-by-name
+|\ \ \
+| |_|/
+|/| |
+| * | c95e87f (origin/1-remove-a-task-by-name, 1-remove-a-task-by-name) Implement #1
+|/ /
+| * bb953ca (origin/2-find-all-completed-tasks, 2-find-all-completed-tasks) Implement #2
+|/
+* e0dd73f Add starter code
+* bc09c65 Initial commit
