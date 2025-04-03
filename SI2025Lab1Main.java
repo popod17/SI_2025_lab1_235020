@@ -78,7 +78,11 @@ class TaskManager {
 
     // 2. Find all completed tasks
     public List<Task> getCompletedTasks() {
-        // TODO: Implement logic to return completed tasks
+        for (Task task : tasks) {
+            if(task.isCompleted()){
+                System.out.println(task);
+            }
+        }
         return new ArrayList<>();
     }
 
@@ -112,7 +116,7 @@ class TaskManager {
     // 8. Mark a task as completed by name
     public void markTaskCompleted(String name) {
         // TODO: Implement completion logic
-    }
+    }  
 
     // 9. Mark all tasks in a category as completed
     public void markCategoryCompleted(String category) {
@@ -131,7 +135,9 @@ public class SI2025Lab1Main {
         // MISSING: Calls to the new methods that will be implemented
         manager.printTasks();
         manager.removeTask("Submit assignment");
-		manager.printTasks();
+		    manager.printTasks();
 
+
+        manager.getCompletedTasks();
     }
 }
